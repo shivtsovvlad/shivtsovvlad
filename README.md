@@ -1,16 +1,23 @@
-## Hi there 👋
+# Roadmaps: SQL, Python, Data Engineer
 
-<!--
-**shivtsovvlad/shivtsovvlad** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[![roadmap.sh](https://roadmap.sh/card/wide/68ac77a8891a1beee1356732?variant=dark&roadmaps=data-engineer%2Csql%2Cpython)](https://roadmap.sh)
 
-Here are some ideas to get you started:
+Личный репозиторий для прохождения трёх дорожных карт:
+- [SQL Roadmap](https://roadmap.sh/sql)  
+- [Python Roadmap](https://roadmap.sh/python)  
+- [Data Engineer Roadmap](https://roadmap.sh/data-engineer)  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Здесь я собираю конспекты, упражнения, примеры кода и проекты для каждой из дорожных карт.  
+
+## Структура
+- **sql-roadmap/** — теория, задачи и проекты по SQL  
+- **python-roadmap/** — основы Python, задачи и проекты  
+- **data-engineer-roadmap/** — инструменты, big data, cloud и проекты  
+- **resources/** — полезные книги, статьи и шпаргалки  
+
+## Цель
+- Проходить каждую дорожную карту системно;  
+- Закреплять теорию на практике;  
+- Собрать свою базу знаний по SQL, Python и Data Engineering.  
+
+---
