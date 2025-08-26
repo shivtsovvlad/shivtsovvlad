@@ -5,7 +5,9 @@
 Личный репозиторий для прохождения трёх дорожных карт:
 - [SQL Roadmap](https://roadmap.sh/sql)  
 - [Python Roadmap](https://roadmap.sh/python)  
-- [Data Engineer Roadmap](https://roadmap.sh/data-engineer)  
+- [Data Engineer Roadmap](https://roadmap.sh/data-engineer)
+
+Также вы можете посмотреть [конспекты и полезные материалы](CONTENTS.md)
 
 Здесь я собираю конспекты, упражнения, примеры кода и проекты для каждой из дорожных карт.  
 
