@@ -1,6 +1,6 @@
 # Типы баз данных и примеры их применения
 
-Источник: конспект + личные заметки  
+Видео: [SQL vs. NoSQL: What's the difference?](https://www.youtube.com/watch?v=Q5aTUc7c4jg&ab_channel=IBMTechnology)
 
 ---
 
