@@ -48,7 +48,7 @@ graph LR
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/shivtsovvlad/datapipeline-hub.git
+   git clone git@github.com:DataArchitectPro/DataArchitectPro.git
    ```
 
 2. Установите зависимости:
@@ -96,4 +96,5 @@ graph LR
 ---
 
 *Последнее обновление: 2025-11-27*
+
 
