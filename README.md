@@ -1,6 +1,5 @@
 # DataPipeline Hub: унифицированная платформа обработки данных
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/shivtsovvlad/datapipeline-hub/ci.yml?branch=main)](https://github.com/shivtsovvlad/datapipeline-hub/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Описание проекта
@@ -97,3 +96,4 @@ graph LR
 ---
 
 *Последнее обновление: 2025-11-27*
+
