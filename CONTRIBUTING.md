@@ -96,8 +96,8 @@
 ## Контакты
 
 По вопросам вклада:
-- **Email**: v.shivtsov@example.com
-- **Telegram**: @shivtsov_vlad
+- **Email**: shivtsovvlad@gmail.com
+- **Telegram**: @DataArchitectPro
 - **Issue tracker**: [Issues](https://github.com/shivtsovvlad/datapipeline-hub/issues)
 
 ---
