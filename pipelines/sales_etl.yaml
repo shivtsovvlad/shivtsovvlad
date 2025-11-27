@@ -1,0 +1,50 @@
+pipeline:
+  name: sales_etl
+  description: ETL для обработки данных продаж
+  schedule: "0 2 * * *"  # ежедневно в 2:00
+  timeout: 3600  # 1 час
+  steps:
+    - name: extract_raw_data
+      type: sql_query
+      config:
+        query: |
+          SELECT 
+            order_id,
+            customer_id,
+            amount,
+            order_date
+          FROM sales
+          WHERE order_date >= '{{prev_run}}'
+        target: staging.sales_raw
+        batch_size: 10000
+
+    - name: clean_data
+      type: python_script
+      config:
+        script: scripts/clean_sales.py
+        input: staging.sales_raw
+        output: staging.sales_clean
+
+    - name: aggregate_metrics
+      type: sql_query
+      config:
+        query: |
+          INSERT INTO analytics.sales_daily (date, total_sales, customer_count)
+          SELECT
+            DATE(order_date) AS date,
+            SUM(amount) AS total_sales,
+            COUNT(DISTINCT customer_id) AS customer_count
+          FROM staging.sales_clean
+          GROUP BY DATE(order_date)
+        target: analytics.sales_daily
+
+    - name: notify_completion
+      type: api_call
+      config:
+        method: POST
+        url: https://slack.com/api/chat.postMessage
+        headers:
+          Authorization: "Bearer {{SLACK_TOKEN}}"
+        payload:
+          channel: "#data-eng"
+          text: "✅ Пайплайн sales_etl выполнен успешно!"
